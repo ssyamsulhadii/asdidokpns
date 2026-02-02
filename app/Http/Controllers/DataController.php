@@ -27,8 +27,10 @@ class DataController extends Controller
         ]);
 
         $result = DataPns::findByNipAndNik($request->nip, $request->nik);
+        $result->is_done = false;
         if ($result) {
-            $result = User::firstWhere('nip', $request->nip);
+            $user = User::firstWhere('nip', $request->nip);
+            $result = $user ?? $result;
         }
         return view('welcome', [
             'result' => $result,
