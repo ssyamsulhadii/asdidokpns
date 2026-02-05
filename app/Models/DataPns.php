@@ -37,8 +37,7 @@ class DataPns extends Model
         foreach ($list as $item) {
             if (
                 isset($item->nip, $item->nik) &&
-                $item->nip === $nip &&
-                $item->nik === $nik
+                $item->nip === $nip
             ) {
                 return $item;
             }
