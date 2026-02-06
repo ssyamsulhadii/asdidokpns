@@ -175,7 +175,8 @@
                     <p class="text-sm mt-2"><strong>Pertek NIP</strong> Opsional Jika ada diupload.</p>
                     <p class="text-sm mt-2"><strong>DRH</strong> Jika saat pemberkasan CPNS tidak ditemukan maka DRH
                         dapat diperbarui dan diatandatangani ybs.</p>
-                    <p class="text-sm mt-2"><strong>SPMT</strong> jika SPMT tidak ditemukan dapat diperbarui dengan
+                    <p class="text-sm mt-2"><strong>SPMT</strong> Opsional Jika ada diupload atau, jika SPMT tidak
+                        ditemukan dapat diperbarui dengan
                         ketentuan yang berlaku : </p>
                     <ul>
                         <li>1. SPMT dapat dibuat ulang tetapi harus didasari dengan payung hukum dari PPK yang dibuat
@@ -286,7 +287,7 @@
                                 <x-lihat-dokumen :is-done="$result->is_done" :nip="$result->nip" folder="DRH" />
                             </div>
                             <div class="relative mt-2">
-                                <label class="block mb-2">Dokumen SPMT</label>
+                                <label class="block mb-2">Dokumen SPMT (Opsional)</label>
                                 <input type="file" name="spmt" value="{{ old('spmt', request('spmt')) }}"
                                     class="w-full pl-5 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary transition duration-150 text-gray-800">
                                 @error('spmt')
