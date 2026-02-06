@@ -51,7 +51,7 @@ class DataController extends Controller
             'skpns'  => "{$ruleType}|file|mimes:pdf|max:1200",
             'd2'     => "sometimes|file|mimes:pdf|max:1200", // tetap opsional
             'drh'    => "{$ruleType}|file|mimes:pdf|max:1200",
-            'spmt'   => "{$ruleType}|file|mimes:pdf|max:1200",
+            'spmt'   => "sometimes|file|mimes:pdf|max:1200",
         ];
 
         $messages = [
