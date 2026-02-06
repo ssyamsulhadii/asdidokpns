@@ -166,6 +166,10 @@
                         <li>Dokumen <strong>DRH</strong> (Daftar Riwayat Hidup).</li>
                         <li>Dokumen <strong>SPMT</strong> (Surat Perintah Melaksanakan Tugas).</li>
                     </ul>
+                    <p class="text-sm font-semibold text-primary mb-2 mt-3">Contoh DRH</p>
+                    <a href="{{ asset('data-pns/format-drh.doc') }}" class="text-blue-600 hover:underline"
+                        target="_blank">Download
+                        Contoh DRH</a>
                 </div>
 
                 {{-- CARD INFORMASI --}}
